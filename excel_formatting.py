@@ -1,5 +1,5 @@
 from openpyxl import load_workbook
-from openpyxl.styles import PatternFill, Border, Side, Alignment, Protection, Font
+from openpyxl.styles import PatternFill, Border, Alignment, Font
 
 #H:\Git\Excel Formatting\patent data.xlsx
 source = input("Enter the path of file:")
@@ -8,7 +8,6 @@ wb = load_workbook(source)
 ws = wb.active
 
 #print(ws)
-
 
 ws.insert_rows(1)
 ws.insert_cols(1)
@@ -86,7 +85,6 @@ for j in range(minc, maxc +1):
             
 
 # to replace blank columns with hyphen
-#print(blankr, blankc)
 for n in range(len(blankr)):
     ws.cell(row = blankr[n], column = blankc[n]).value = "-"
 
@@ -104,5 +102,3 @@ for m in range(minc +1, maxc +1):
 ws.sheet_view.showGridLines = False
 
 wb.save("formatted file.xlsx")
-
-
