@@ -5,5 +5,6 @@ Sets the font to Arial, size 10, alignment center.
 Adds hyphen in blank cells.
 Highlights the headers of columns.
 Applies border.
-Removes Gruidlines.
+Removes Gridlines.
+Applies Text Wrapping.
 Sets row height 25, column width 15.
